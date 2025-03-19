@@ -42,7 +42,7 @@ public class CustomHeader extends ConstraintLayout{
                     }
                 }
             });
-            };
+            }
         }
     public void setTitle(String title){
 //        tvTitle.setText(title);

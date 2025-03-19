@@ -1,5 +1,4 @@
 package com.kieu.bainhom;
-import com.kieu.bainhom.HomeActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -34,12 +33,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
-        HomeButton homeButton = findViewById(R.id.homeButton);
-        homeButton.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-            startActivity(intent);
-            finish();
-        });
 
         CardView cardViewFavorite = findViewById(R.id.cardView_Favourite);
         cardViewFavorite.setOnClickListener(new View.OnClickListener() {
@@ -49,5 +42,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        // Ánh xạ Button từ layout
+        Button deleteButton = findViewById(R.id.deleteButton);
+
+        // Tạo một đối tượng DeleteButton và thiết lập sự kiện cho nút
+        new DeleteButton(this, deleteButton);
     }
 }
