@@ -148,5 +148,73 @@
             android:layout_marginBottom="6dp"
             android:textColor="#000000" />
     </LinearLayout>
-</LinearLayout>
+    <!-- list_item.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/light_blue"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutEnglish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"
+        >
+
+        <!-- TextView cho nội dung văn bản -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:id="@+id/textViewOriginal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Người dùng đã..."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <!-- TextView cho nội dung dịch -->
+            <TextView
+                android:id="@+id/textViewTranslated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yesterday, what are you..."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Các nút Action: Delete và Play -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/buttonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Delete"
+                android:src="@drawable/baseline_delete_24" />
+
+            <ImageButton
+                android:id="@+id/buttonPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play"
+                android:contentDescription="Play"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:layout_marginLeft="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
