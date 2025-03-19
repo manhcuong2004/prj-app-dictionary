@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/checkBox"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/tvWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="attention"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvPronounce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="/ a'tenSn / (v)"
+            android:textColor="#555555"/>
+
+        <TextView
+            android:id="@+id/tvMeaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sự chú ý"/>
+    </LinearLayout>
+
+</RelativeLayout>
