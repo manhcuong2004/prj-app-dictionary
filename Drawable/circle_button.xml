@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
-    <solid android:color="#1D93F3"/>
-    <size android:width="60dp"
-        android:height="60dp"/>
-</shape>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#0B6FB1">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#1D93F3"/>
+        </shape>
+    </item>
+</ripple>
