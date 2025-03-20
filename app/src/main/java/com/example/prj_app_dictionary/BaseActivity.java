@@ -1,4 +1,27 @@
 package com.example.prj_app_dictionary;
 
-public class BaseActivity {
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.widget.Button;
+import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class BaseActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        new Handler().post(() -> {
+            ImageButton btnBack = findViewById(R.id.btnHome);
+            if (btnBack != null) {
+                btnBack.setOnClickListener(v -> {
+                    Intent intent = new Intent(this, MainActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    startActivity(intent);
+                });
+            }
+        });
+    }
 }
