@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Hiển thị màn hình Splash trước
+        // Hiển thị màn hình bắt đầu trước
         setContentView(R.layout.mh_batdau);
 
         // Sau 3 giây, chuyển sang giao diện chính
