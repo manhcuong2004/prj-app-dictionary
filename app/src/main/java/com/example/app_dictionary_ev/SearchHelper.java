@@ -82,13 +82,13 @@ public class SearchHelper {
                 wordSelectedListener.onWordSelected(entry);
             }
 
-            // ✅ Thêm vào database lịch sử
-            // ✅ Lấy thông tin từ entry
+            //  Thêm vào database lịch sử
+            //  Lấy thông tin từ entry
             String word = entry.word;
             String pronounce = entry.pronunciation;
             String pos = entry.pos;
 
-            // ✅ Nối toàn bộ nghĩa, ví dụ và ghi chú
+            //  Nối toàn bộ nghĩa, ví dụ và ghi chú
             StringBuilder meaningBuilder = new StringBuilder();
             if (entry.meanings != null) {
                 for (DictionaryEntry.Meaning meaningObj : entry.meanings) {
@@ -104,11 +104,11 @@ public class SearchHelper {
             }
             String meaning = meaningBuilder.toString().trim();
 
-            // ✅ Thêm vào database lịch sử
+            //  Thêm vào database lịch sử
             HistoryDatabaseHelper dbHelper = new HistoryDatabaseHelper(context);
             dbHelper.addHistoryWord(word, pronounce, pos, meaning);
 
-            // ✅ Ẩn gợi ý sau khi chọn
+            //  Ẩn gợi ý sau khi chọn
             rvSuggestions.setVisibility(View.GONE);
         });
 

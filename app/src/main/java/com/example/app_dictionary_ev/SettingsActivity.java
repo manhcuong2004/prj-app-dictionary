@@ -20,9 +20,6 @@ import com.example.app_dictionary_ev.DatabaseHelper;
 import com.example.app_dictionary_ev.HistoryDatabaseHelper;
 import android.database.sqlite.SQLiteDatabase;
 
-
-
-
 public class SettingsActivity extends AppCompatActivity {
 
     private TextView speedTextView;

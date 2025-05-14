@@ -103,8 +103,6 @@ public class SuggestionAdapter extends RecyclerView.Adapter<SuggestionAdapter.Su
 
     }
 
-
-
     @Override
     public int getItemCount() {
         return suggestions.size();

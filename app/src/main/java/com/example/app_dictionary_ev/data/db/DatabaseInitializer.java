@@ -37,12 +37,6 @@ public class DatabaseInitializer {
             return;
         }
 
-        // Đang có thread khác khởi tạo
-//        if (!isInitializing.compareAndSet(false, true)) {
-//            callback.onComplete(0);
-//            return;
-//        }
-
         Executors.newSingleThreadExecutor().execute(() -> {
             AppDatabase db = AppDatabase.getDatabase(context);
 
@@ -98,7 +92,7 @@ public class DatabaseInitializer {
                 }
             }
 
-            // Insert nốt những phần còn lại
+            // Insert những phần còn lại
             if (!batch.isEmpty()) {
                 db.dictionaryDao().insertAll(batch);
             }

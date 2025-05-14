@@ -63,17 +63,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-//    public boolean addFavoriteWord(String word, String pronunciation, String type, String meaning) {
-//        SQLiteDatabase db = this.getWritableDatabase();
-//        ContentValues values = new ContentValues();
-//        values.put(COLUMN_WORD, word);
-//        values.put(COLUMN_PRONUNCIATION, pronunciation);
-//        values.put(COLUMN_TYPE, type);
-//        values.put(COLUMN_MEANING, meaning);
-//        long result = db.insert(TABLE_FAVORITES, null, values);
-//        db.close();
-//        return result != -1;
-//    }
 public boolean addFavoriteWord(String word, String pronunciation, String type, String meaning) {
     SQLiteDatabase db = this.getWritableDatabase();
 
