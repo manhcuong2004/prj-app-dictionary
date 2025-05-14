@@ -37,7 +37,7 @@ public class FavoriteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.favourite_activity);
+        setContentView(R.layout.activity_favourite);
 
         dbHelper = new DatabaseHelper(this);
         CustomHeader customHeader = findViewById(R.id.customHeader);

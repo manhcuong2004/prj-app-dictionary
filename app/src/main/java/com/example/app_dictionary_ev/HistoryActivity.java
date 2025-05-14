@@ -37,7 +37,7 @@ public class HistoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.history_activity); // bạn nhớ tạo XML tương ứng
+        setContentView(R.layout.activity_history); // bạn nhớ tạo XML tương ứng
 
         dbHelper = new HistoryDatabaseHelper(this);
         CustomHeader customHeader = findViewById(R.id.customHeader);

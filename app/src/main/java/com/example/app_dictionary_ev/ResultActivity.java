@@ -36,7 +36,7 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d("ResultActivity", "onCreate called");
-        setContentView(R.layout.search_result);
+        setContentView(R.layout.activity_result);
 
         // Ánh xạ các view
         TextView tvWord = findViewById(R.id.tvWord);
